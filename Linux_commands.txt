@@ -1,0 +1,18 @@
+SYSTEM_CTL_COMMANDS :-----
+
+To install the OpenSSH server on Ubuntu, open a terminal and run the command sudo apt install openssh-server. This command installs the necessary packages for the SSH server. Then, you can start the SSH service with sudo systemctl start ssh and enable it for automatic startup with sudo systemctl enable ssh. You might also need to configure your firewall to allow SSH traffic, often using sudo ufw allow ssh. 
+Here's a more detailed breakdown:
+1. Update Package Lists:
+Before installing any software, it's good practice to update your package lists. Use the command sudo apt update. 
+2. Install OpenSSH Server:
+Use the command sudo apt install openssh-server to install the OpenSSH server package. 
+3. Start the SSH Service:
+Start the SSH service using the command sudo systemctl start ssh. 
+4. Enable SSH for Boot:
+Enable the SSH service to start automatically on boot using sudo systemctl enable ssh. 
+5. Configure Firewall (if using ufw):
+If you're using the ufw firewall, allow SSH connections with sudo ufw allow ssh. 
+6. Check SSH Status:
+You can check the status of the SSH service with sudo systemctl status ssh. 
+7. Configure (Optional):
+You can customize the SSH server's configuration by editing /etc/ssh/sshd_config. For example, you might want to change the default port or disable password authentication. 
